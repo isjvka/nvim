@@ -3,6 +3,8 @@
 set noswapfile " don't use swapfile
 set nobackup nowritebackup " don't create annoying backup files
 set clipboard+=unnamedplus " use system clipboard
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o " disable auto-commenting on newline
+let g:indent_guides_enable_on_vim_startup = 1
 
 
 " theme
@@ -30,4 +32,3 @@ set linebreak " word wrap
 " cursor
 
 set cursorline " highlight current line
-set guicursor=n-i-v-c:block-Cursor " block cursor in all modes
